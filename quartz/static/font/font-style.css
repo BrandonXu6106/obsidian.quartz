@@ -8,3 +8,20 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'DM Serif Display';
+  src: url('./DMSerifDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('./BricolageGrotesque-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-Regular.ttf') format('truetype');
+  font-weight: 400;
+}
