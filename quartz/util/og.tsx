@@ -5,11 +5,12 @@ import { QuartzPluginData } from "../plugins/vfile"
 import { JSXInternal } from "preact/src/jsx"
 import { FontSpecification, getFontSpecificationName, ThemeKey } from "./theme"
 import path from "path"
+
 import { QUARTZ } from "./path"
 import { formatDate, getDate } from "../components/Date"
 import readingTime from "reading-time"
 import { i18n } from "../i18n"
-import { styleText } from "util"
+import { styleText } from "util" 
 
 const defaultHeaderWeight = [700]
 const defaultBodyWeight = [400]
@@ -75,6 +76,25 @@ export async function fetchTtf(
   rawFontName: string,
   weight: FontWeight,
 ): Promise<Buffer<ArrayBufferLike> | undefined> {
+   // 1. 本地字体映射
+   const localFontMap: Record<string, string> = {
+    "JetBrains Mono": "quartz/static/font/JetBrainsMono-Regular.ttf",
+    "DM Serif Display": "quartz/static/font/DMSerifDisplay-Regular.ttf",
+    "Bricolage Grotesque": "quartz/static/font/BricolageGrotesque-Regular.ttf",
+    // 如有其它本地字体，继续添加
+  }
+  const localPath = localFontMap[rawFontName]
+  if (localPath) {
+    try {
+      console.log(`[OG] 读取本地字体: ${rawFontName} -> ${localPath}`)
+      return await fs.readFile(path.resolve(localPath))
+    } catch (e) {
+      console.log(`[OG] 本地字体读取失败: ${rawFontName} -> ${localPath}`, e)
+    }
+  } else {
+    console.log(`[OG] 未找到本地字体映射: ${rawFontName}`)
+  }
+
   const fontName = rawFontName.replaceAll(" ", "+")
   const cacheKey = `${fontName}-${weight}`
   const cacheDir = path.join(QUARTZ, ".quartz-cache", "fonts")
