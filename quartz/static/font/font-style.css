@@ -23,7 +23,8 @@
 
 @font-face {
   font-family: 'JetBrains Mono';
-  src: url('./JetBrainsMono-Regular.ttf') format('truetype');
+  src: url('./JetBrainsMono-Regular.ttf') format('truetype'),
+       url('./JebrainsMono-Bold.ttf') format('truetype');
   font-weight: 400;
 }
 

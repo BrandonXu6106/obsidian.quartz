@@ -357,3 +357,32 @@ body.animation-ready #quartz-body {
     transform: rotateX(0deg) rotateY(0deg) scale(1);
   }
 }
+/* 一级标题（大标题）颜色 */
+h1 {
+  color: #3b82f6; // 亮蓝色，可自定义
+}
+
+/* 二级标题 */
+h2 {
+  color: #9333ea; // 紫色，可自定义
+}
+
+/* 三级标题 */
+h3 {
+  color: #f59e42; // 橙色，可自定义
+}
+
+/* 四级标题 */
+h4 {
+  color: #10b981; // 绿色，可自定义
+}
+
+/* 五级标题 */
+h5 {
+  color: #ef4444; // 红色，可自定义
+}
+
+/* 六级标题 */
+h6 {
+  color: #64748b; // 灰蓝色，可自定义
+}
