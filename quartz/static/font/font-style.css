@@ -16,7 +16,8 @@
 
 @font-face {
   font-family: 'Bricolage Grotesque';
-  src: url('./BricolageGrotesque-Regular.ttf') format('truetype');
+  src: url('./BricolageGrotesque-Regular.ttf') format('truetype'),
+       url('./BricolageGrotesque-Bold.ttf') format('truetype');
   font-weight: 400;
 }
 
@@ -25,3 +26,4 @@
   src: url('./JetBrainsMono-Regular.ttf') format('truetype');
   font-weight: 400;
 }
+
