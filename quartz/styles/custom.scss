@@ -389,13 +389,13 @@ h6 {
 }
 
 
-/* 亮色主题简洁表格 */
+/* 亮色主题清新表格 */
 [saved-theme="light"] table {
   width: 100%;
   border-collapse: collapse;
   margin: 2rem 0;
-  background: #fff;
-  color: #222;
+  background: #f8fffb;
+  color: #22543d;
   font-size: 1rem;
   box-shadow: none;
   border-radius: 0;
@@ -405,13 +405,13 @@ h6 {
   display: table;
 }
 
-/* 暗色主题简洁表格 */
+/* 暗色主题清新表格 */
 [saved-theme="dark"] table {
   width: 100%;
   border-collapse: collapse;
   margin: 2rem 0;
-  background: #23272e;
-  color: #f1f5fa;
+  background: #1a2733;
+  color: #a7ffeb;
   font-size: 1rem;
   box-shadow: none;
   border-radius: 0;
@@ -423,33 +423,33 @@ h6 {
 
 /* 表头样式 */
 [saved-theme="light"] th {
-  background: #f3f4f6;
+  background: #b2f5ea;
   font-weight: 700;
-  color: #374151;
-  border-bottom: 2px solid #e5e7eb;
+  color: #22543d;
+  border-bottom: 2px solid #81e6d9;
 }
 
 [saved-theme="dark"] th {
-  background: #2d333b;
-  color: #ffe082;
-  border-bottom: 2px solid #374151;
+  background: #234e52;
+  color: #81e6d9;
+  border-bottom: 2px solid #319795;
 }
 
 /* 斑马线和悬停效果 */
 [saved-theme="light"] tr:nth-child(even) {
-  background: #f9fafb;
+  background: #e6fffa;
 }
 
 [saved-theme="dark"] tr:nth-child(even) {
-  background: #262b33;
+  background: #22303a;
 }
 
 [saved-theme="light"] tr:hover {
-  background: #f1f5f9;
+  background: #c6f6d5;
 }
 
 [saved-theme="dark"] tr:hover {
-  background: #31363f;
+  background: #285e61;
 }
 
 /* 单元格样式 */
@@ -460,12 +460,12 @@ h6 {
   padding: 0.4em 0.8em;
   word-break: break-all;
   white-space: normal;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #b2f5ea;
 }
 
 [saved-theme="dark"] th,
 [saved-theme="dark"] td {
-  border: 1px solid #374151;
+  border: 1px solid #234e52;
 }
 
 /* 移除表格外层横向滚动条（如有） */
