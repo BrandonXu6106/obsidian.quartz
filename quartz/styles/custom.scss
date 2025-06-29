@@ -445,20 +445,29 @@ h6 {
 }
 
 /* 斑马线和悬停效果 */
-[saved-theme="light"] tr:nth-child(even) {
-  background: rgba(200, 240, 245, 0.13);
+// filepath: e:\VScode\obsidian.quartz\quartz\styles\custom.scss
+[saved-theme="light"] tbody tr:nth-child(odd) {
+  background: rgba(236, 250, 255, 0.55);
 }
 
-[saved-theme="dark"] tr:nth-child(even) {
-  background: rgba(34, 54, 64, 0.13);
+[saved-theme="light"] tbody tr:nth-child(even) {
+  background: rgba(200, 240, 245, 0.28);
+}
+
+[saved-theme="dark"] tbody tr:nth-child(odd) {
+  background: rgba(34, 54, 64, 0.32);
+}
+
+[saved-theme="dark"] tbody tr:nth-child(even) {
+  background: rgba(44, 64, 84, 0.18);
 }
 
 [saved-theme="light"] tr:hover {
-  background: rgba(180, 230, 240, 0.18);
+  background: rgba(180, 230, 240, 0.22) !important;
 }
 
 [saved-theme="dark"] tr:hover {
-  background: rgba(60, 120, 180, 0.18);
+  background: rgba(60, 120, 180, 0.22) !important;
 }
 
 /* 单元格样式 */
