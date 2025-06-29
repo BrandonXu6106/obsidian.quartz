@@ -388,18 +388,17 @@ h6 {
   color: #64748b; // 灰蓝色，可自定义
 }
 
-/* 亮色主题玻璃拟态表格（无外边框） */
+/* 亮色主题玻璃拟态表格 */
 [saved-theme="light"] table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   margin: 1.2rem 0;
-  background: linear-gradient(120deg, rgba(236, 250, 255, 0.90) 70%, rgba(220, 240, 245, 0.75) 100%);
+  background: linear-gradient(120deg, rgba(236, 250, 255, 0.93) 70%, rgba(220, 240, 245, 0.80) 100%);
   backdrop-filter: blur(12px) saturate(1.12);
   -webkit-backdrop-filter: blur(12px) saturate(1.12);
   border-radius: 10px;
   box-shadow: 0 4px 24px 0 rgba(60, 180, 180, 0.13), 0 1.5px 0 0 rgba(255, 255, 255, 0.18) inset;
-  /* 不要外边框 */
   border: none;
   color: #23405a;
   font-size: 0.97rem;
@@ -408,13 +407,13 @@ h6 {
   display: table;
 }
 
-/* 暗色主题玻璃拟态表格（无外边框） */
+/* 暗色主题玻璃拟态表格 */
 [saved-theme="dark"] table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
   margin: 1.2rem 0;
-  background: linear-gradient(120deg, rgba(28, 38, 48, 0.96) 70%, rgba(34, 54, 64, 0.82) 100%);
+  background: linear-gradient(120deg, rgba(28, 38, 48, 0.97) 70%, rgba(34, 54, 64, 0.85) 100%);
   backdrop-filter: blur(14px) saturate(1.10);
   -webkit-backdrop-filter: blur(14px) saturate(1.10);
   border-radius: 10px;
@@ -453,7 +452,7 @@ h6 {
 }
 
 [saved-theme="light"] tbody tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.38);
+  background: rgba(255, 255, 255, 0.55);
 }
 
 [saved-theme="dark"] tbody tr:nth-child(odd) {
