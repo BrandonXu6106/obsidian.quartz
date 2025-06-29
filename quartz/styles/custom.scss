@@ -390,10 +390,8 @@ h6 {
 
 
 [saved-theme="light"] table {
-  width: auto;
-  min-width: 0;
+  width: 100%;
   max-width: 100%;
-  display: block;
   box-sizing: border-box;
   background: linear-gradient(120deg, rgba(255, 255, 255, 0.55) 80%, rgba(255, 255, 255, 0.25) 100%);
   backdrop-filter: blur(8px) saturate(1.2);
@@ -411,8 +409,6 @@ h6 {
   font-weight: 700;
   color: #374151;
   border-bottom: 1.5px solid rgba(180, 180, 200, 0.25);
-  word-break: break-all;
-  white-space: normal;
 }
 
 /* 斑马线和悬停效果 */
