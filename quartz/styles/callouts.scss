@@ -2,21 +2,29 @@
 @use "sass:color";
 
 .callout {
-  border: 1px solid var(--border);
-  background-color: var(--bg);
-  border-radius: 5px;
-  padding: 0 1rem;
-  overflow-y: hidden;
+  border: none;
+  background: linear-gradient(135deg, var(--bg) 80%, var(--color)10 100%);
+  border-radius: 12px;
+  padding: 0 1.2rem 1.2rem 1.2rem;
+  margin: 1.5rem 0;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08), 0 1.5px 6px 0 rgba(0, 0, 0, 0.03);
+  overflow: hidden;
   box-sizing: border-box;
+  position: relative;
+  transition: box-shadow 0.2s;
 
-  & > .callout-content {
+  &:hover {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.12), 0 3px 12px 0 rgba(0, 0, 0, 0.06);
+  }
+
+  &>.callout-content {
     display: grid;
-    transition: grid-template-rows 0.3s ease;
+    transition: grid-template-rows 0.3s cubic-bezier(.4, 2, .6, 1);
 
-    & > .callout-content-inner {
+    &>.callout-content-inner {
       overflow: hidden;
 
-      & > :first-child {
+      &> :first-child {
         margin-top: 0;
       }
     }
@@ -129,43 +137,67 @@
 
 .callout-title {
   display: flex;
-  align-items: flex-start;
-  gap: 5px;
-  padding: 1rem 0;
+  align-items: center;
+  gap: 12px;
+  padding: 1.2rem 0 0.8rem 0;
   color: var(--color);
+  position: relative;
 
-  --icon-size: 18px;
-
-  & .fold-callout-icon {
-    transition: transform 0.15s ease;
-    opacity: 0.8;
-    cursor: pointer;
-    --callout-icon: var(--callout-icon-fold);
-  }
-
-  & > .callout-title-inner > p {
-    color: var(--color);
-    margin: 0;
-  }
+  --icon-size: 22px;
 
   .callout-icon,
-  & .fold-callout-icon {
+  .fold-callout-icon {
     width: var(--icon-size);
     height: var(--icon-size);
     flex: 0 0 var(--icon-size);
-
-    // icon support
-    background-size: var(--icon-size) var(--icon-size);
-    background-position: center;
-    background-color: var(--color);
+    background: var(--color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.10);
     mask-image: var(--callout-icon);
-    mask-size: var(--icon-size) var(--icon-size);
+    mask-size: 60% 60%;
     mask-position: center;
     mask-repeat: no-repeat;
-    padding: 0.2rem 0;
+    transition: background 0.2s, box-shadow 0.2s;
+    margin-right: 4px;
+  }
+
+  .fold-callout-icon {
+    background: var(--color);
+    opacity: 0.7;
+    cursor: pointer;
+    transition: transform 0.18s cubic-bezier(.4, 2, .6, 1);
+    --callout-icon: var(--callout-icon-fold);
   }
 
   .callout-title-inner {
     font-weight: $semiBoldWeight;
+    font-size: 1.08rem;
+    letter-spacing: 0.01em;
+    line-height: 1.3;
+
+    >p {
+      color: var(--color);
+      margin: 0;
+    }
   }
+}
+
+// 内容与标题分隔线
+.callout-content {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  margin-top: 0.5rem;
+  padding-top: 0.8rem;
+  font-size: 1rem;
+  color: var(--text-normal, #333);
+  line-height: 1.7;
+  background: transparent;
+  transition: background 0.2s;
+}
+
+// 折叠动画
+.callout.is-collapsed>.callout-title>.fold-callout-icon {
+  transform: rotateZ(-90deg);
 }
