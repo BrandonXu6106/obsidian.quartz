@@ -16,17 +16,36 @@
 
 @font-face {
   font-family: 'Bricolage Grotesque';
-  src: url('./BricolageGrotesque-Regular.ttf') format('truetype'),
-       url('./BricolageGrotesque-SemiBold.ttf') format('truetype'), 
-       url('./BricolageGrotesque-Bold.ttf') format('truetype');
+  src: url('./BricolageGrotesque-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
 @font-face {
   font-family: 'JetBrains Mono';
-  src: url('./JetBrainsMono-Regular.ttf') format('truetype'),
-       url('./JebrainsMono-Bold.ttf') format('truetype'),
-       url('./JetBrainsMono-SemiBold.ttf') format('truetype');
+  src: url('./BricolageGrotesque-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./BricolageGrotesque-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-Regular.ttf') format('truetype');
   font-weight: 400;
 }
 
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url('./JetBrainsMono-Bold.ttf') format('truetype');
+  font-weight: 700;
+}
