@@ -389,73 +389,70 @@ h6 {
 }
 
 
-/* 亮色主题玻璃拟态表格 */
+/* 亮色主题简洁表格 */
 [saved-theme="light"] table {
   width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
+  border-collapse: collapse;
   margin: 2rem 0;
-  background: linear-gradient(120deg, rgba(255, 255, 255, 0.75) 80%, rgba(255, 255, 255, 0.35) 100%);
-  backdrop-filter: blur(6px) saturate(1.1);
-  -webkit-backdrop-filter: blur(6px) saturate(1.1);
-  border-radius: 10px;
-  box-shadow: 0 2px 12px 0 rgba(60, 72, 88, 0.08);
-  border: 1px solid rgba(180, 180, 200, 0.15);
-  overflow: hidden;
-  transition: box-shadow 0.2s, background 0.2s;
+  background: #fff;
+  color: #222;
+  font-size: 1rem;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  overflow: visible;
+  transition: none;
   display: table;
 }
 
-/* 暗色主题玻璃拟态表格 */
+/* 暗色主题简洁表格 */
 [saved-theme="dark"] table {
   width: 100%;
-  max-width: 100%;
-  box-sizing: border-box;
+  border-collapse: collapse;
   margin: 2rem 0;
-  background: linear-gradient(120deg, rgba(24, 26, 32, 0.85) 80%, rgba(36, 38, 48, 0.55) 100%);
-  backdrop-filter: blur(6px) saturate(1.1);
-  -webkit-backdrop-filter: blur(6px) saturate(1.1);
-  border-radius: 10px;
-  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.18);
-  border: 1px solid rgba(60, 72, 88, 0.22);
+  background: #23272e;
   color: #f1f5fa;
-  overflow: hidden;
-  transition: box-shadow 0.2s, background 0.2s;
+  font-size: 1rem;
+  box-shadow: none;
+  border-radius: 0;
+  border: none;
+  overflow: visible;
+  transition: none;
   display: table;
 }
 
 /* 表头样式 */
 [saved-theme="light"] th {
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.5));
+  background: #f3f4f6;
   font-weight: 700;
   color: #374151;
-  border-bottom: 1px solid rgba(180, 180, 200, 0.18);
+  border-bottom: 2px solid #e5e7eb;
 }
 
 [saved-theme="dark"] th {
-  background: linear-gradient(90deg, rgba(35, 40, 58, 0.95), rgba(35, 40, 58, 0.6));
+  background: #2d333b;
   color: #ffe082;
-  border-bottom: 1px solid rgba(60, 72, 88, 0.32);
+  border-bottom: 2px solid #374151;
 }
 
 /* 斑马线和悬停效果 */
 [saved-theme="light"] tr:nth-child(even) {
-  background: rgba(255, 255, 255, 0.13);
+  background: #f9fafb;
 }
 
 [saved-theme="dark"] tr:nth-child(even) {
-  background: rgba(32, 36, 46, 0.22);
+  background: #262b33;
 }
 
 [saved-theme="light"] tr:hover {
-  background: rgba(255, 255, 255, 0.22);
+  background: #f1f5f9;
 }
 
 [saved-theme="dark"] tr:hover {
-  background: rgba(35, 40, 58, 0.32);
+  background: #31363f;
 }
 
-/* 单元格样式，防止内容撑宽 */
+/* 单元格样式 */
 [saved-theme="light"] th,
 [saved-theme="light"] td,
 [saved-theme="dark"] th,
@@ -463,7 +460,12 @@ h6 {
   padding: 0.4em 0.8em;
   word-break: break-all;
   white-space: normal;
-  border: none;
+  border: 1px solid #e5e7eb;
+}
+
+[saved-theme="dark"] th,
+[saved-theme="dark"] td {
+  border: 1px solid #374151;
 }
 
 /* 移除表格外层横向滚动条（如有） */
