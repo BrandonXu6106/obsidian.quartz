@@ -393,7 +393,7 @@ h6 {
   width: 100%;
   border-collapse: collapse;
   margin: 1.2rem 0;
-  background: #b6baff;
+  background: linear-gradient(120deg, rgba(245, 245, 255, 0.90) 70%, rgba(225, 235, 250, 0.70) 100%);
   backdrop-filter: blur(8px) saturate(1.10);
   -webkit-backdrop-filter: blur(8px) saturate(1.10);
   border-radius: 8px;
@@ -402,7 +402,7 @@ h6 {
   box-shadow:
     0 2px 12px 0 rgba(120, 120, 200, 0.10),
     0 0 0 1.5px rgba(255, 255, 255, 0.18) inset;
-  color: #23244a;
+  color: #2a2e4a;
   font-size: 0.97rem;
   overflow: hidden;
   transition: box-shadow 0.2s, background 0.2s;
@@ -414,7 +414,7 @@ h6 {
   width: 100%;
   border-collapse: collapse;
   margin: 1.2rem 0;
-  background: #23244a;
+  background: linear-gradient(120deg, rgba(38, 40, 60, 0.95) 70%, rgba(54, 54, 84, 0.75) 100%);
   backdrop-filter: blur(10px) saturate(1.10);
   -webkit-backdrop-filter: blur(10px) saturate(1.10);
   border-radius: 8px;
