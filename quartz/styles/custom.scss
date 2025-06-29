@@ -389,60 +389,52 @@ h6 {
 }
 
 
-/* 通用表格样式 */
 table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.5rem 0;
-  font-size: 1rem;
-  background: var(--table-bg, #fff);
-  box-shadow: 0 2px 8px rgba(60, 72, 88, 0.04);
-  color: var(--table-fg, #222);
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.55) 80%, rgba(255, 255, 255, 0.25) 100%);
+  backdrop-filter: blur(8px) saturate(1.2);
+  -webkit-backdrop-filter: blur(8px) saturate(1.2);
+  border-radius: 14px;
+  box-shadow: 0 4px 24px 0 rgba(60, 72, 88, 0.10);
+  border: 1.5px solid rgba(180, 180, 200, 0.18);
+  overflow: hidden;
+  transition: box-shadow 0.2s, background 0.2s;
 }
 
-th,
-td {
-  border: 1px solid var(--table-border, #e5e7eb);
-  padding: 0.3em 0.6em;
-  text-align: left;
-}
-
+/* 表头更突出 */
 th {
-  background: var(--table-th-bg, #f3f4f6);
-  font-weight: 600;
-  color: var(--table-th-fg, #374151);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3));
+  font-weight: 700;
+  color: #374151;
+  border-bottom: 1.5px solid rgba(180, 180, 200, 0.25);
 }
 
+/* 斑马线和悬停效果 */
 tr:nth-child(even) {
-  background: var(--table-zebra, #f9fafb);
+  background: rgba(255, 255, 255, 0.18);
 }
 
 tr:hover {
-  background: var(--table-hover, #f1f5f9);
-  transition: background 0.2s;
-}
-/* 暗色主题下表格适配 */
-[saved-theme="dark"] table {
-  background: #181a20 !important; // 更深的背景
-  color: #f1f5fa !important; // 更亮的字体
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 255, 255, 0.28);
 }
 
-[saved-theme="dark"] th,
-[saved-theme="dark"] td {
-  border-color: #2a2f3a !important; // 深灰色边框
-  color: #f1f5fa !important; // 保证单元格字体亮色
+/* 暗色主题下玻璃拟态表格 */
+[saved-theme="dark"] table {
+  background: linear-gradient(120deg, rgba(24, 26, 32, 0.75) 80%, rgba(36, 38, 48, 0.45) 100%);
+  color: #f1f5fa;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.25);
+  border: 1.5px solid rgba(60, 72, 88, 0.25);
 }
 
 [saved-theme="dark"] th {
-  background: #23283a !important; // 深蓝灰色表头
-  color: #ffe082 !important; // 柔和亮黄色表头字体
+  background: linear-gradient(90deg, rgba(35, 40, 58, 0.85), rgba(35, 40, 58, 0.5));
+  color: #ffe082;
+  border-bottom: 1.5px solid rgba(60, 72, 88, 0.35);
 }
 
 [saved-theme="dark"] tr:nth-child(even) {
-  background: #20242e !important; // 斑马线更深
+  background: rgba(32, 36, 46, 0.35);
 }
 
 [saved-theme="dark"] tr:hover {
-  background: #23283a !important; // 悬停时高亮
+  background: rgba(35, 40, 58, 0.45);
 }
