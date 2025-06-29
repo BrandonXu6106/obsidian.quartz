@@ -387,3 +387,33 @@ h5 {
 h6 {
   color: #64748b; // 灰蓝色，可自定义
 }
+table {
+  width: 100%;
+  border-collapse: collapse; // 合并边框
+  margin: 1.5rem 0;
+  font-size: 1rem;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(60, 72, 88, 0.04);
+}
+
+th,
+td {
+  border: 1px solid var(--lightgray, #e5e7eb); // 使用主题色或默认灰色
+  padding: 0.6em 1em;
+  text-align: left;
+}
+
+th {
+  background: var(--lightgray, #f3f4f6);
+  font-weight: 600;
+  color: var(--secondary, #374151);
+}
+
+tr:nth-child(even) {
+  background: #f9fafb; // 斑马线效果
+}
+
+tr:hover {
+  background: #f1f5f9; // 鼠标悬停高亮
+  transition: background 0.2s;
+}
