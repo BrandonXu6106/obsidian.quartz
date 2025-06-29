@@ -390,11 +390,11 @@ h6 {
 
 
 table {
-  width: 100%;
+  width: 95%;
   background: linear-gradient(120deg, rgba(255, 255, 255, 0.55) 80%, rgba(255, 255, 255, 0.25) 100%);
   backdrop-filter: blur(8px) saturate(1.2);
   -webkit-backdrop-filter: blur(8px) saturate(1.2);
-  border-radius: 14px;
+  border-radius: 7px;
   box-shadow: 0 4px 24px 0 rgba(60, 72, 88, 0.10);
   border: 1.5px solid rgba(180, 180, 200, 0.18);
   overflow: hidden;
