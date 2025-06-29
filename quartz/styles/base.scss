@@ -82,7 +82,10 @@ article {
 strong {
   font-weight: $semiBoldWeight;
 }
-
+a.internal,
+a.internal.alias {
+  font-weight: bold !important;
+}
 a {
   font-weight: $semiBoldWeight;
   text-decoration: none;
@@ -92,10 +95,8 @@ a {
   &:hover {
     color: var(--tertiary);
   }
-  a.internal,
-  a.internal.alias {
-    font-weight: bold !important;
-  }
+
+ 
 
   &.internal {
     text-decoration: none;
