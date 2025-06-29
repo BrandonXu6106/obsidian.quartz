@@ -421,27 +421,28 @@ tr:hover {
   background: var(--table-hover, #f1f5f9);
   transition: background 0.2s;
 }
-
-/* 暗色主题适配 */
+/* 暗色主题下表格适配 */
 [saved-theme="dark"] table {
-  background: var(--table-bg-dark, #23272e);
-  color: var(--table-fg-dark, #e5e7eb);
+  background: #181a20 !important; // 更深的背景
+  color: #f1f5fa !important; // 更亮的字体
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
 }
 
 [saved-theme="dark"] th,
 [saved-theme="dark"] td {
-  border-color: var(--table-border-dark, #374151);
+  border-color: #2a2f3a !important; // 深灰色边框
+  color: #f1f5fa !important; // 保证单元格字体亮色
 }
 
 [saved-theme="dark"] th {
-  background: var(--table-th-bg-dark, #2d333b);
-  color: var(--table-th-fg-dark, #f3f4f6);
+  background: #23283a !important; // 深蓝灰色表头
+  color: #ffe082 !important; // 柔和亮黄色表头字体
 }
 
 [saved-theme="dark"] tr:nth-child(even) {
-  background: var(--table-zebra-dark, #262b33);
+  background: #20242e !important; // 斑马线更深
 }
 
 [saved-theme="dark"] tr:hover {
-  background: var(--table-hover-dark, #31363f);
+  background: #23283a !important; // 悬停时高亮
 }
