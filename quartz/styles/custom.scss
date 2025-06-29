@@ -393,16 +393,16 @@ h6 {
   width: 100%;
   border-collapse: collapse;
   margin: 1.2rem 0;
-  background: linear-gradient(120deg, rgba(236, 250, 255, 0.82) 70%, rgba(220, 240, 245, 0.65) 100%);
-  backdrop-filter: blur(8px) saturate(1.08);
-  -webkit-backdrop-filter: blur(8px) saturate(1.08);
+  background: linear-gradient(120deg, rgba(245, 245, 255, 0.90) 70%, rgba(225, 235, 250, 0.70) 100%);
+  backdrop-filter: blur(8px) saturate(1.10);
+  -webkit-backdrop-filter: blur(8px) saturate(1.10);
   border-radius: 8px;
-  box-shadow: 0 2px 12px 0 rgba(60, 180, 180, 0.10);
-  border: 1.5px solid rgba(180, 220, 250, 0.35);/* 更亮更通透的玻璃线条 */
+  box-shadow: 0 2px 12px 0 rgba(120, 120, 200, 0.10);
+  border: 1.5px solid rgba(160, 180, 240, 0.33);
   box-shadow:
-    0 2px 12px 0 rgba(60, 180, 180, 0.10),
-    0 0 0 1.5px rgba(255, 255, 255, 0.18) inset;/* 内高光增强玻璃感 */
-  color: #23405a;
+    0 2px 12px 0 rgba(120, 120, 200, 0.10),
+    0 0 0 1.5px rgba(255, 255, 255, 0.18) inset;
+  color: #2a2e4a;
   font-size: 0.97rem;
   overflow: hidden;
   transition: box-shadow 0.2s, background 0.2s;
@@ -414,16 +414,15 @@ h6 {
   width: 100%;
   border-collapse: collapse;
   margin: 1.2rem 0;
-  background: linear-gradient(120deg, rgba(28, 38, 48, 0.93) 70%, rgba(34, 54, 64, 0.7) 100%);
-  backdrop-filter: blur(10px) saturate(1.08);
-  -webkit-backdrop-filter: blur(10px) saturate(1.08);
+  background: linear-gradient(120deg, rgba(38, 40, 60, 0.95) 70%, rgba(54, 54, 84, 0.75) 100%);
+  backdrop-filter: blur(10px) saturate(1.10);
+  -webkit-backdrop-filter: blur(10px) saturate(1.10);
   border-radius: 8px;
-  box-shadow: 0 2px 12px 0 rgba(40, 120, 180, 0.13);
-  border: 1.5px solid rgba(120, 180, 220, 0.25);
-    box-shadow:
-      0 2px 12px 0 rgba(40, 120, 180, 0.13),
-      0 0 0 1.5px rgba(255, 255, 255, 0.10) inset;
-  color: #e3f6fa;
+  border: 1.5px solid rgba(120, 140, 220, 0.22);
+  box-shadow:
+    0 2px 12px 0 rgba(80, 120, 180, 0.13),
+    0 0 0 1.5px rgba(255, 255, 255, 0.10) inset;
+  color: #e6eaff;
   font-size: 0.97rem;
   overflow: hidden;
   transition: box-shadow 0.2s, background 0.2s;
@@ -432,53 +431,51 @@ h6 {
 
 /* 表头样式（无渐变，纯色） */
 [saved-theme="light"] th {
-  background: #e3f6fa;
+  background: #e7eaff;
   font-weight: 700;
-  color: #23405a;
-  border-bottom: 1.5px solid #b6e0ef;
+  color: #2a2e4a;
+  border-bottom: 1.5px solid #b6baff;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   padding: 0.32em 0.7em;
 }
 
 [saved-theme="dark"] th {
-  background: #23405a;
-  color: #aeefff;
-  border-bottom: 1.5px solid #3a4d6c;
+  background: #2a2e4a;
+  color: #b6baff;
+  border-bottom: 1.5px solid #4a4d6c;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   padding: 0.32em 0.7em;
 }
-/* 斑马线和悬停效果 */
-[saved-theme="light"] tr:nth-child(odd),
+
+/* 斑马线和悬停效果（只作用于表体） */
 [saved-theme="light"] tbody tr:nth-child(odd) {
-  background: rgba(236, 250, 255, 0.55);
+  background: rgba(230, 235, 255, 0.65);
 }
 
-[saved-theme="light"] tr:nth-child(even),
 [saved-theme="light"] tbody tr:nth-child(even) {
-  background: rgba(200, 240, 245, 0.28);
+  background: rgba(210, 220, 245, 0.38);
 }
 
-[saved-theme="dark"] tr:nth-child(odd),
 [saved-theme="dark"] tbody tr:nth-child(odd) {
-  background: rgba(34, 54, 64, 0.32);
+  background: rgba(44, 48, 74, 0.38);
 }
 
-[saved-theme="dark"] tr:nth-child(even),
 [saved-theme="dark"] tbody tr:nth-child(even) {
-  background: rgba(44, 64, 84, 0.18);
+  background: rgba(38, 40, 60, 0.22);
 }
 
 [saved-theme="light"] tr:hover,
 [saved-theme="light"] tbody tr:hover {
-  background: rgba(180, 230, 240, 0.22) !important;
+  background: rgba(180, 200, 255, 0.22) !important;
 }
 
 [saved-theme="dark"] tr:hover,
 [saved-theme="dark"] tbody tr:hover {
-  background: rgba(60, 120, 180, 0.22) !important;
+  background: rgba(120, 140, 220, 0.22) !important;
 }
+
 /* 单元格样式 */
 [saved-theme="light"] th,
 [saved-theme="light"] td,
@@ -487,7 +484,7 @@ h6 {
   padding: 0.22em 0.55em;
   word-break: break-all;
   white-space: normal;
-  border: 1px solid rgba(120, 180, 200, 0.08);
+  border: 1px solid rgba(120, 140, 200, 0.08);
   font-size: 0.97em;
   border-radius: 0;
 }
