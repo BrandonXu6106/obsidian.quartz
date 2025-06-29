@@ -388,8 +388,7 @@ h6 {
   color: #64748b; // 灰蓝色，可自定义
 }
 
-
-/* 亮色主题玻璃拟态表格 */
+/* 亮色主题玻璃拟态表格（无外边框） */
 [saved-theme="light"] table {
   width: 100%;
   border-collapse: separate;
@@ -400,7 +399,8 @@ h6 {
   -webkit-backdrop-filter: blur(12px) saturate(1.12);
   border-radius: 10px;
   box-shadow: 0 4px 24px 0 rgba(60, 180, 180, 0.13), 0 1.5px 0 0 rgba(255, 255, 255, 0.18) inset;
-  border: 1px solid rgba(120, 180, 200, 0.13);
+  /* 不要外边框 */
+  border: none;
   color: #23405a;
   font-size: 0.97rem;
   overflow: hidden;
@@ -408,7 +408,7 @@ h6 {
   display: table;
 }
 
-/* 暗色主题玻璃拟态表格 */
+/* 暗色主题玻璃拟态表格（无外边框） */
 [saved-theme="dark"] table {
   width: 100%;
   border-collapse: separate;
@@ -419,7 +419,7 @@ h6 {
   -webkit-backdrop-filter: blur(14px) saturate(1.10);
   border-radius: 10px;
   box-shadow: 0 4px 24px 0 rgba(40, 120, 180, 0.18), 0 1.5px 0 0 rgba(255, 255, 255, 0.10) inset;
-  border: 1px solid rgba(80, 180, 200, 0.18);
+  border: none;
   color: #e3f6fa;
   font-size: 0.97rem;
   overflow: hidden;
@@ -473,7 +473,7 @@ h6 {
   background: rgba(60, 120, 180, 0.22) !important;
 }
 
-/* 单元格样式 */
+/* 单元格样式（有玻璃感，无外边框） */
 [saved-theme="light"] th,
 [saved-theme="light"] td,
 [saved-theme="dark"] th,
@@ -486,7 +486,6 @@ h6 {
   border-radius: 0;
   backdrop-filter: blur(2px) saturate(1.04);
   -webkit-backdrop-filter: blur(2px) saturate(1.04);
-  /* 让每个单元格也有轻微玻璃感 */
 }
 
 [saved-theme="light"] td:last-child,
