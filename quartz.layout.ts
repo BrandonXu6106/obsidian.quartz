@@ -22,7 +22,26 @@ const recentNotes = [
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  afterBody: [...recentNotes.map((c) => Component.MobileOnly(c))],
+  afterBody: [
+      Component.Comments({
+        provider: 'giscus',
+        options: {
+          // from data-repo
+          repo: 'ArioXu/obsidian.quartz',
+          // from data-repo-id
+          repoId: 'R_kgDOPCzBlw',
+          // from data-category
+          category: 'Announcements',
+          // from data-category-id
+          categoryId: 'DIC_kwDOPCzBl84CsPT3',
+          // theme
+          themeUrl: "https://example.com/static/giscus", // corresponds to quartz/static/giscus/
+          lightTheme: "light-theme", // corresponds to light-theme.css in quartz/static/giscus/
+          darkTheme: "dark-theme", // corresponds to dark-theme.css quartz/static/giscus/
+        }
+      }),
+    ...recentNotes.map((c) => Component.MobileOnly(c))
+  ],
   footer: Component.Footer({
     links: {
       GitHub: "https://github.com/ArioXu",
