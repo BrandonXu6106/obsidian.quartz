@@ -35,7 +35,7 @@ export const sharedPageComponents: SharedLayout = {
           // from data-category-id
           categoryId: 'DIC_kwDOPCzBl84CsPT3',
           // theme
-          themeUrl: "http://arioxu.github.io/obsidian.quartz/static/giscus", // corresponds to quartz/static/giscus/
+          themeUrl: "https://github.com/ArioXu/obsidian.quartz/tree/v4/quartz/static/giscus", // corresponds to quartz/static/giscus/
           lightTheme: "light-theme", // corresponds to light-theme.css in quartz/static/giscus/
           darkTheme: "dark-theme", // corresponds to dark-theme.css quartz/static/giscus/
         }
