@@ -36,8 +36,8 @@ export const sharedPageComponents: SharedLayout = {
           categoryId: 'DIC_kwDOPCzBl84CsPT3',
           // theme
           themeUrl: "https://github.com/ArioXu/obsidian.quartz/tree/v4/quartz/static/giscus", // corresponds to quartz/static/giscus/
-          lightTheme: "light-theme", // corresponds to light-theme.css in quartz/static/giscus/
-          darkTheme: "dark-theme", // corresponds to dark-theme.css quartz/static/giscus/
+          lightTheme: "light", // corresponds to light-theme.css in quartz/static/giscus/
+          darkTheme: "dark", // corresponds to dark-theme.css quartz/static/giscus/
         }
       }),
     ...recentNotes.map((c) => Component.MobileOnly(c))
